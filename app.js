@@ -402,7 +402,7 @@
   async function initHands() {
     loadText.textContent = 'Downloading hand model...';
     var hands = new Hands({
-      locateFile: function(file) { return 'https://cdn.jsdelivr.net/npm/@mediapipe/hands/' + file; }
+      locateFile: function(file) { return 'lib/' + file; }
     });
     hands.setOptions({
       maxNumHands: 1, modelComplexity: 1,
